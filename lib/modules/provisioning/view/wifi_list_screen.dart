@@ -45,7 +45,7 @@ class WifiListScreen extends HookConsumerWidget {
               item.ssid,
               security: security,
             ) && context.mounted) {
-              context.go('/provisioning/settings');
+              context.push('/provisioning/settings');
             }
           },
         ),
